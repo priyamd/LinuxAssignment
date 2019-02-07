@@ -36,4 +36,16 @@ if [ $DAYOFWEEK == 7 ]
 then
         echo "Weekoff.. :)"
 fi
+---------------------------------------------------------------------------------------------------------------------
+2nd solution: 
+
+DAYOFWEEK=$(date +"%u")
+echo "Day of week :$DAYOFWEEK"
+
+if [ $DAYOFWEEK -le 5 ]
+then
+        echo "Working Day.. ;)"
+else
+        echo "Weekend.. ;)"
+fi
 
